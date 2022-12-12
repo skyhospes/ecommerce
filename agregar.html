@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tienda virtual</title>
+    <link rel="stylesheet" href="css/agregar.css">
+    <script src="https://kit.fontawesome.com/12715d18d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href=""><h1><span><i class="fa-solid fa-dice-d20"></i></span></i> The <span>gaming</span> world</h1></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="agregar__producto">
+        <div class="titulo">
+            <h1>Agregar nuevo producto</h1>
+        </div>
+        <form class="form__agregar" action="">
+          <input class="form__input" type="text" placeholder="URL imagen" required>
+          <input class="form__input" type="text" placeholder="Categoria" required>
+          <input class="form__input" type="text" placeholder="Nombre del producto" required>
+          <input class="form__input" type="text" placeholder="Precio del producto" required>
+          <textarea class="form__text" name="" placeholder="Descripcion del producto" id="" cols="30" rows="10"></textarea>
+          <input class="btn__agregar" type="submit" value="Agregar producto">
+        </form>
+    </section>
+
+    <section class="info">
+        <div class="logo logo__info">
+            <h1><span><i class="fa-solid fa-dice-d20"></i></span></i> The <span>gaming</span> world</h1>
+        </div>
+        <div class="links__info">
+            <a href="">Quienes somos</a>
+            <a href="">Política de Privacidad</a>
+            <a href="">Programa de fidelidad</a>
+            <a href="">Nuestras Tiendas</a>
+            <a href="">Quiero ser franquiciado</a>
+            <a href="">Anuncie aquí</a>
+        </div>
+        
+        <div class="form__info">
+            <p>Hable con nosotros</p>
+            <form action="">
+                <div class="inputBox">
+                    <input
+                        type="text"
+                        required="required"
+                        name="Nombre"
+                        id="Nombre"
+                        class="input-nome"/>
+                    <span>Nombre</span>
+                </div>
+                <div class="inputBox">
+                    <textarea
+                        id="msg"
+                        required="required"
+                        cols="5"
+                        rows="5"></textarea>
+                    <span>Mensaje</span>
+                </div>
+                <input class="btn__mensaje" type="submit" value="Enviar mensaje">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h1>Desarrollado por Camilo Orjuela</h1>
+        <p>2022</p>
+    </footer>
+
+    <script type="module" src="controllers/productos-controllers.js"></script>
+</body>
+</html>
